@@ -65,3 +65,9 @@ model VerificationToken {
 
     @@unique([identifier, token])
 }
+
+model SaveData {
+  id        Int     @id @default(autoincrement())
+  saveTime  String
+  savePrice String
+}
